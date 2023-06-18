@@ -1,0 +1,258 @@
+{
+    "info": {
+        "_postman_id": "6b8a322a-c4c0-4244-bd2a-bcd0cbd7218c",
+        "name": "Short Movie Festival",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Admin",
+            "item": [
+                {
+                    "name": "Get Most Viewed Genre",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/get-most-viewed-genre?per_page=2",
+                            "query": [
+                                {
+                                    "key": "per_page",
+                                    "value": "2"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "movies",
+                                "get-most-viewed-genre"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "Get Most Viewed Movie",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/get-most-viewed-movie?per_page=2",
+                            "query": [
+                                {
+                                    "key": "per_page",
+                                    "value": "2"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "movies",
+                                "get-most-viewed-movie"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "Update Movie",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/update",
+                            "path": [
+                                "api",
+                                "movies",
+                                "update"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "John Wick 2",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Amazing",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "artists[0]",
+                                    "value": "Keanu",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "artists[1]",
+                                    "value": "John",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "genre",
+                                    "value": "comedy",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "id",
+                                    "value": "6",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "file",
+                                    "src": "c:\\Users\\user\\Downloads\\file_example_MP4_480_1_5MG.mp4",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Upload Movie",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/add",
+                            "path": [
+                                "api",
+                                "movies",
+                                "add"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "John Wick",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Amazing",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "artists[0]",
+                                    "value": "Keanu",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "artists[1]",
+                                    "value": "John",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "genre",
+                                    "value": "comedy",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "file",
+                                    "src": "c:\\Users\\user\\Downloads\\file_example_MP4_480_1_5MG.mp4",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "User",
+            "item": [
+                {
+                    "name": " Get All & Search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/get-all?per_page=5&search=romance",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "2",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "5"
+                                },
+                                {
+                                    "key": "search",
+                                    "value": "romance"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "movies",
+                                "get-all"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "Watch Movie",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/movies/stream/6",
+                            "path": [
+                                "api",
+                                "movies",
+                                "stream",
+                                "6"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
